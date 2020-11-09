@@ -1,21 +1,14 @@
 {
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$PUT+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/workspaces/databricks-test-81dfgr?api-version=2018-04-01+1": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$PUT+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test-jns407?api-version=2018-04-01+1": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/workspaces/databricks-test-81dfgr?api-version=2018-04-01",
-      "Content": "{\r\n  \"location\": \"eastus\",\r\n  \"properties\": {\r\n    \"parameters\": {\r\n      \"customPrivateSubnetName\": {\r\n        \"value\": \"priv\"\r\n      },\r\n      \"customPublicSubnetName\": {\r\n        \"value\": \"pub\"\r\n      },\r\n      \"customVirtualNetworkId\": {\r\n        \"value\": \"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Network/virtualNetworks/databricks-test-vn\"\r\n      }\r\n    },\r\n    \"managedResourceGroupId\": \"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-databricks-test-81dfgr-fd0u2l3856n9t\"\r\n  },\r\n  \"sku\": {\r\n    \"name\": \"standard\"\r\n  }\r\n}",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test-jns407?api-version=2018-04-01",
+      "Content": "{\r\n  \"location\": \"eastus\",\r\n  \"properties\": {\r\n    \"parameters\": {\r\n      \"customVirtualNetworkId\": {\r\n        \"value\": \"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Network/virtualNetworks/databricks-vnet-olhdj4\"\r\n      },\r\n      \"customPublicSubnetName\": {\r\n        \"value\": \"pub\"\r\n      },\r\n      \"customPrivateSubnetName\": {\r\n        \"value\": \"priv\"\r\n      }\r\n    },\r\n    \"managedResourceGroupId\": \"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-databricks-test-jns407-c4buq7ihxzglv\"\r\n  },\r\n  \"sku\": {\r\n    \"name\": \"standard\"\r\n  }\r\n}",
       "Headers": {
-        "x-ms-unique-id": [ "67" ],
-        "x-ms-client-request-id": [ "58514773-ed2a-446e-98ab-d9d0c31a7c20" ],
-        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
-        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3" ],
-        "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
         "Content-Type": [ "application/json" ],
-        "Content-Length": [ "625" ]
+        "Content-Length": [ "634" ]
       }
     },
     "Response": {
@@ -24,35 +17,35 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Retry-After": [ "15" ],
-        "Azure-AsyncOperation": [ "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01" ],
-        "x-ms-request-id": [ "eastus:5d5f4d1b-1997-4905-b083-b00d2a766036" ],
+        "Azure-AsyncOperation": [ "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01" ],
+        "x-ms-request-id": [ "eastus:25d88591-9895-458c-ba96-ab491b6e23db" ],
         "x-ms-ratelimit-remaining-subscription-writes": [ "1197" ],
-        "x-ms-correlation-request-id": [ "0f528edb-bd17-4c04-a189-7817288f0486" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084420Z:0f528edb-bd17-4c04-a189-7817288f0486" ],
+        "x-ms-correlation-request-id": [ "15f4316f-e13c-44bd-8eeb-04c5a7b8111e" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085139Z:15f4316f-e13c-44bd-8eeb-04c5a7b8111e" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:44:20 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:51:38 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "927" ],
+        "Content-Length": [ "932" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"properties\":{\"managedResourceGroupId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-databricks-test-81dfgr-fd0u2l3856n9t\",\"provisioningState\":\"Accepted\",\"authorizations\":[{\"principalId\":\"9a74af6f-d153-4348-988a-e2672920bee9\",\"roleDefinitionId\":\"8e3af657-a8ff-443c-a75c-2fe8c4bcb635\"}],\"createdBy\":{\"oid\":\"ce74a389-b5e8-4f16-89c7-787031ddd903\",\"puid\":\"1003200055C8A74B\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"updatedBy\":{\"oid\":\"ce74a389-b5e8-4f16-89c7-787031ddd903\",\"puid\":\"1003200055C8A74B\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"createdDateTime\":\"2020-03-03T08:44:18.2793356Z\"},\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/workspaces/databricks-test-81dfgr\",\"name\":\"databricks-test-81dfgr\",\"type\":\"Microsoft.Databricks/workspaces\",\"sku\":{\"name\":\"standard\"},\"location\":\"eastus\"}"
+      "Content": "{\"properties\":{\"managedResourceGroupId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-databricks-test-jns407-c4buq7ihxzglv\",\"provisioningState\":\"Accepted\",\"authorizations\":[{\"principalId\":\"9a74af6f-d153-4348-988a-e2672920bee9\",\"roleDefinitionId\":\"8e3af657-a8ff-443c-a75c-2fe8c4bcb635\"}],\"createdBy\":{\"oid\":\"97deab6c-e478-40b4-b4da-e7d9353dc1e8\",\"puid\":\"100320004B7AE8A5\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"updatedBy\":{\"oid\":\"97deab6c-e478-40b4-b4da-e7d9353dc1e8\",\"puid\":\"100320004B7AE8A5\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"createdDateTime\":\"2020-10-12T08:51:38.0445292Z\"},\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test-jns407\",\"name\":\"databricks-test-jns407\",\"type\":\"Microsoft.Databricks/workspaces\",\"sku\":{\"name\":\"standard\"},\"location\":\"eastus\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01+2": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "67", "68" ],
-        "x-ms-client-request-id": [ "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20" ],
+        "x-ms-unique-id": [ "44", "45" ],
+        "x-ms-client-request-id": [ "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2" ],
         "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
         "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -63,13 +56,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:4481904f-e90a-410f-9232-a2a0248a7975" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11979" ],
-        "x-ms-correlation-request-id": [ "7736f8e8-19d3-4b82-87af-f69abf87affe" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084435Z:7736f8e8-19d3-4b82-87af-f69abf87affe" ],
+        "x-ms-request-id": [ "eastus:8c82a699-4c30-40a4-8b9e-b96b3aba7906" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11989" ],
+        "x-ms-correlation-request-id": [ "5de4d30e-9c95-43f5-883c-adcc118e828c" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085155Z:5de4d30e-9c95-43f5-883c-adcc118e828c" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:44:34 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:51:55 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -79,18 +72,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01+3": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "67", "68", "69" ],
-        "x-ms-client-request-id": [ "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20" ],
+        "x-ms-unique-id": [ "44", "45", "46" ],
+        "x-ms-client-request-id": [ "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2" ],
         "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
         "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -101,13 +94,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:e0baad5e-d2b2-45a2-924f-95959567b0e1" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11978" ],
-        "x-ms-correlation-request-id": [ "1e53a09b-25fb-4f60-ba38-79dbcd578770" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084506Z:1e53a09b-25fb-4f60-ba38-79dbcd578770" ],
+        "x-ms-request-id": [ "eastus:095e6d17-2b94-402d-a72c-f7254575c1ee" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11988" ],
+        "x-ms-correlation-request-id": [ "90d46125-829c-4860-9c3c-5d94c7d44eb1" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085225Z:90d46125-829c-4860-9c3c-5d94c7d44eb1" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:45:05 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:52:25 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -117,18 +110,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01+4": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "67", "68", "69", "70" ],
-        "x-ms-client-request-id": [ "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20" ],
+        "x-ms-unique-id": [ "44", "45", "46", "47" ],
+        "x-ms-client-request-id": [ "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2" ],
         "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
         "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -139,13 +132,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:899949a6-14d6-449d-9cde-b09e3ea686a7" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11977" ],
-        "x-ms-correlation-request-id": [ "b4cc8ac0-b6fd-4c80-ac14-3b4acbece3f4" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084537Z:b4cc8ac0-b6fd-4c80-ac14-3b4acbece3f4" ],
+        "x-ms-request-id": [ "eastus:a14022bc-5cc5-4bce-a52d-9173f52398d2" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11987" ],
+        "x-ms-correlation-request-id": [ "9b38c9a2-05e7-41ac-9f0f-0294a9de1b8b" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085255Z:9b38c9a2-05e7-41ac-9f0f-0294a9de1b8b" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:45:36 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:52:55 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -155,18 +148,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01+5": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "67", "68", "69", "70", "71" ],
-        "x-ms-client-request-id": [ "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20" ],
+        "x-ms-unique-id": [ "44", "45", "46", "47", "48" ],
+        "x-ms-client-request-id": [ "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2" ],
         "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
         "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -177,13 +170,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:248c1a0b-5be4-491c-8e7c-534fbb9dcd97" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11976" ],
-        "x-ms-correlation-request-id": [ "3d5ca4a4-3e77-4e33-b963-32ce134d5db6" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084607Z:3d5ca4a4-3e77-4e33-b963-32ce134d5db6" ],
+        "x-ms-request-id": [ "eastus:099b187c-a08f-4ad8-860e-cab18f581ccb" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11986" ],
+        "x-ms-correlation-request-id": [ "f1bf964d-4922-414f-a0cf-59c98e297ec8" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085326Z:f1bf964d-4922-414f-a0cf-59c98e297ec8" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:46:07 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:53:25 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -193,94 +186,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01+6": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZVByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRERBVEFCUklDS1M6M0EyRFJHOjNBMkRGSllXOVE6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "67", "68", "69", "70", "71", "72" ],
-        "x-ms-client-request-id": [ "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20" ],
+        "x-ms-unique-id": [ "44", "45", "46", "47", "48", "49" ],
+        "x-ms-client-request-id": [ "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2" ],
         "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
         "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 202,
-      "Headers": {
-        "Cache-Control": [ "no-cache" ],
-        "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:73694c03-26b7-4527-be75-715e00772531" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11975" ],
-        "x-ms-correlation-request-id": [ "2f7600f0-cd5e-46ee-a6c3-583102ffaa31" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084638Z:2f7600f0-cd5e-46ee-a6c3-583102ffaa31" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:46:37 GMT" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "21" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\"status\":\"Accepted\"}"
-    }
-  },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01+7": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01",
-      "Content": null,
-      "Headers": {
-        "x-ms-unique-id": [ "67", "68", "69", "70", "71", "72", "73" ],
-        "x-ms-client-request-id": [ "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20" ],
-        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
-        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
-        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 202,
-      "Headers": {
-        "Cache-Control": [ "no-cache" ],
-        "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:3acb1ddc-db4e-4a34-99a0-5db3560d1f17" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11974" ],
-        "x-ms-correlation-request-id": [ "736b485a-e18b-4e59-a459-0541729aa4dd" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084709Z:736b485a-e18b-4e59-a459-0541729aa4dd" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:47:09 GMT" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "21" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\"status\":\"Accepted\"}"
-    }
-  },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01+8": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VQcm92aXNpb25pbmdKb2I6MkRSR0E6MkRURVNUR1JPVVA2SFZEV1E6MkREQVRBQlJJQ0tTOjNBMkRURVNUOjNBMkQ4MURGR1IifQ?api-version=2018-04-01",
-      "Content": null,
-      "Headers": {
-        "x-ms-unique-id": [ "67", "68", "69", "70", "71", "72", "73", "74" ],
-        "x-ms-client-request-id": [ "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20" ],
-        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
-        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
-        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -292,13 +209,13 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Vary": [ "Accept-Encoding" ],
-        "x-ms-request-id": [ "eastus:0772b9eb-6537-4fe2-9b84-6bad5079e942" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11973" ],
-        "x-ms-correlation-request-id": [ "80a49a19-f881-474e-8dad-8863f20f6f7b" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084739Z:80a49a19-f881-474e-8dad-8863f20f6f7b" ],
+        "x-ms-request-id": [ "eastus:466c226e-995e-4d25-b868-4466e6d8cad7" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11985" ],
+        "x-ms-correlation-request-id": [ "4a3299eb-8575-415c-8268-a4ff077d33a2" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085356Z:4a3299eb-8575-415c-8268-a4ff077d33a2" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:47:39 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:53:55 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "22" ],
@@ -308,18 +225,18 @@
       "Content": "{\"status\":\"Succeeded\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/workspaces/databricks-test-81dfgr?api-version=2018-04-01+9": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test-jns407?api-version=2018-04-01+7": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/workspaces/databricks-test-81dfgr?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test-jns407?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "67", "68", "69", "70", "71", "72", "73", "74", "75" ],
-        "x-ms-client-request-id": [ "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20", "58514773-ed2a-446e-98ab-d9d0c31a7c20" ],
-        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
-        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
-        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "x-ms-unique-id": [ "44", "45", "46", "47", "48", "49", "50" ],
+        "x-ms-client-request-id": [ "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2", "4331b604-c7a4-4116-a1c5-96ef2711d5c2" ],
+        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -331,34 +248,34 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Vary": [ "Accept-Encoding" ],
-        "x-ms-request-id": [ "eastus:739a6e51-384e-4332-a27b-70ae387a1cfe" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11972" ],
-        "x-ms-correlation-request-id": [ "d1f84e62-8efe-4547-8903-673a6822e48f" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084740Z:d1f84e62-8efe-4547-8903-673a6822e48f" ],
+        "x-ms-request-id": [ "eastus:f657efbc-b316-4193-8c03-0954fe4d2169" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11984" ],
+        "x-ms-correlation-request-id": [ "a2c17c00-a9f6-4c72-8186-15bf3c9aeec6" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085357Z:a2c17c00-a9f6-4c72-8186-15bf3c9aeec6" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:47:39 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:53:56 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "1881" ],
+        "Content-Length": [ "2102" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"properties\":{\"managedResourceGroupId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-databricks-test-81dfgr-fd0u2l3856n9t\",\"parameters\":{\"amlWorkspaceId\":{\"type\":\"String\",\"value\":\"\"},\"customPrivateSubnetName\":{\"type\":\"String\",\"value\":\"priv\"},\"customPublicSubnetName\":{\"type\":\"String\",\"value\":\"pub\"},\"customVirtualNetworkId\":{\"type\":\"String\",\"value\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Network/virtualNetworks/databricks-test-vn\"},\"enableFedRampCertification\":{\"type\":\"Bool\",\"value\":false},\"enableNoPublicIp\":{\"type\":\"Bool\",\"value\":false},\"loadBalancerBackendPoolName\":{\"type\":\"String\",\"value\":\"\"},\"loadBalancerId\":{\"type\":\"String\",\"value\":\"\"},\"relayNamespaceName\":{\"type\":\"String\",\"value\":\"dbrelaykx3otbvdc7fpa\"},\"resourceTags\":{\"type\":\"Object\",\"value\":{\"application\":\"databricks\",\"databricks-environment\":\"true\"}},\"storageAccountName\":{\"type\":\"String\",\"value\":\"dbstoragekx3otbvdc7fpa\"},\"storageAccountSkuName\":{\"type\":\"String\",\"value\":\"Standard_GRS\"},\"vnetAddressPrefix\":{\"type\":\"String\",\"value\":\"10.139\"}},\"provisioningState\":\"Succeeded\",\"authorizations\":[{\"principalId\":\"9a74af6f-d153-4348-988a-e2672920bee9\",\"roleDefinitionId\":\"8e3af657-a8ff-443c-a75c-2fe8c4bcb635\"}],\"createdBy\":{\"oid\":\"ce74a389-b5e8-4f16-89c7-787031ddd903\",\"puid\":\"1003200055C8A74B\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"updatedBy\":{\"oid\":\"ce74a389-b5e8-4f16-89c7-787031ddd903\",\"puid\":\"1003200055C8A74B\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"createdDateTime\":\"2020-03-03T08:44:18.2793356Z\"},\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/workspaces/databricks-test-81dfgr\",\"name\":\"databricks-test-81dfgr\",\"type\":\"Microsoft.Databricks/workspaces\",\"sku\":{\"name\":\"standard\"},\"location\":\"eastus\"}"
+      "Content": "{\"properties\":{\"managedResourceGroupId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-databricks-test-jns407-c4buq7ihxzglv\",\"parameters\":{\"amlWorkspaceId\":{\"type\":\"String\",\"value\":\"\"},\"customPrivateSubnetName\":{\"type\":\"String\",\"value\":\"priv\"},\"customPublicSubnetName\":{\"type\":\"String\",\"value\":\"pub\"},\"customVirtualNetworkId\":{\"type\":\"String\",\"value\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Network/virtualNetworks/databricks-vnet-olhdj4\"},\"enableFedRampCertification\":{\"type\":\"Bool\",\"value\":false},\"enableNoPublicIp\":{\"type\":\"Bool\",\"value\":false},\"loadBalancerBackendPoolName\":{\"type\":\"String\",\"value\":\"\"},\"loadBalancerId\":{\"type\":\"String\",\"value\":\"\"},\"prepareEncryption\":{\"type\":\"Bool\",\"value\":false},\"relayNamespaceName\":{\"type\":\"String\",\"value\":\"dbrelayjoyhc2oacsab6\"},\"requireInfrastructureEncryption\":{\"type\":\"Bool\",\"value\":false},\"resourceTags\":{\"type\":\"Object\",\"value\":{\"application\":\"databricks\",\"databricks-environment\":\"true\"}},\"storageAccountName\":{\"type\":\"String\",\"value\":\"dbstoragejoyhc2oacsab6\"},\"storageAccountSkuName\":{\"type\":\"String\",\"value\":\"Standard_GRS\"},\"vnetAddressPrefix\":{\"type\":\"String\",\"value\":\"10.139\"}},\"provisioningState\":\"Succeeded\",\"authorizations\":[{\"principalId\":\"9a74af6f-d153-4348-988a-e2672920bee9\",\"roleDefinitionId\":\"8e3af657-a8ff-443c-a75c-2fe8c4bcb635\"}],\"createdBy\":{\"oid\":\"97deab6c-e478-40b4-b4da-e7d9353dc1e8\",\"puid\":\"100320004B7AE8A5\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"updatedBy\":{\"oid\":\"97deab6c-e478-40b4-b4da-e7d9353dc1e8\",\"puid\":\"100320004B7AE8A5\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"workspaceId\":\"4792686070935860\",\"workspaceUrl\":\"adb-4792686070935860.0.azuredatabricks.net\",\"createdDateTime\":\"2020-10-12T08:51:38.0445292Z\"},\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test-jns407\",\"name\":\"databricks-test-jns407\",\"type\":\"Microsoft.Databricks/workspaces\",\"sku\":{\"name\":\"standard\"},\"location\":\"eastus\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$DELETE+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/workspaces/databricks-test-81dfgr?api-version=2018-04-01+10": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$DELETE+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test-jns407?api-version=2018-04-01+8": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/workspaces/databricks-test-81dfgr?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test-jns407?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7" ],
+        "x-ms-unique-id": [ "51" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
         "CommandName": [ "Remove-AzDatabricksWorkspace" ],
         "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -369,15 +286,15 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "Location": [ "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01" ],
+        "Location": [ "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01" ],
         "Retry-After": [ "15" ],
-        "x-ms-request-id": [ "eastus:531ded99-1b5e-4e00-81fb-02baeeca3965" ],
+        "x-ms-request-id": [ "eastus:4d0fea4f-d0b3-4088-8286-531c8efe052a" ],
         "x-ms-ratelimit-remaining-subscription-deletes": [ "14999" ],
-        "x-ms-correlation-request-id": [ "8e16d858-4d2f-45ec-996f-c1fc7754cf0d" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084741Z:8e16d858-4d2f-45ec-996f-c1fc7754cf0d" ],
+        "x-ms-correlation-request-id": [ "5fe4f136-8238-4d3e-8ca1-7c795aa4e065" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085358Z:5fe4f136-8238-4d3e-8ca1-7c795aa4e065" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:47:41 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:53:57 GMT" ]
       },
       "ContentHeaders": {
         "Expires": [ "-1" ],
@@ -386,18 +303,18 @@
       "Content": null
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01+11": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+9": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76", "77" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7" ],
+        "x-ms-unique-id": [ "51", "52" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
         "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
         "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -408,13 +325,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:7454bbd2-3264-4a5f-b452-5541bece841d" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11971" ],
-        "x-ms-correlation-request-id": [ "0a7b1119-f557-4ab1-90dd-5ff65be81a72" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084756Z:0a7b1119-f557-4ab1-90dd-5ff65be81a72" ],
+        "x-ms-request-id": [ "eastus:28ea30c9-e48d-4ed4-84bb-301548b98332" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11983" ],
+        "x-ms-correlation-request-id": [ "dc49f7cd-b501-4818-893e-b80cf54d30e0" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085413Z:dc49f7cd-b501-4818-893e-b80cf54d30e0" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:47:56 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:54:12 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -424,18 +341,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01+12": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+10": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76", "77", "78" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7" ],
+        "x-ms-unique-id": [ "51", "52", "53" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
         "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
         "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -446,13 +363,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:adca3e51-4ab2-461a-ada7-000aca7fb8ec" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11970" ],
-        "x-ms-correlation-request-id": [ "3a6b45bb-8da3-4457-b665-b0b956e1857e" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084828Z:3a6b45bb-8da3-4457-b665-b0b956e1857e" ],
+        "x-ms-request-id": [ "eastus:1c245810-f698-42be-9721-ded3ff63e045" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11982" ],
+        "x-ms-correlation-request-id": [ "0652dd18-31ed-4ab1-85ef-ef079d7df4eb" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085443Z:0652dd18-31ed-4ab1-85ef-ef079d7df4eb" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:48:27 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:54:43 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -462,18 +379,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01+13": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+11": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76", "77", "78", "79" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7" ],
+        "x-ms-unique-id": [ "51", "52", "53", "54" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
         "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
         "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -484,13 +401,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:0c93369c-abe5-498f-900c-012789fbf558" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11969" ],
-        "x-ms-correlation-request-id": [ "6da978a8-97cd-4d70-b59c-6c52d347d171" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084858Z:6da978a8-97cd-4d70-b59c-6c52d347d171" ],
+        "x-ms-request-id": [ "eastus:c3c168b7-a3c7-4fa2-a3d5-b737a3dbc58b" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11981" ],
+        "x-ms-correlation-request-id": [ "2220ba29-9ff8-43aa-a811-bbf84accad25" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085514Z:2220ba29-9ff8-43aa-a811-bbf84accad25" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:48:58 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:55:13 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -500,18 +417,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01+14": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+12": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76", "77", "78", "79", "80" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7" ],
+        "x-ms-unique-id": [ "51", "52", "53", "54", "55" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
         "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
         "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -522,13 +439,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:3fad1893-6c76-4698-b8db-5f3375f936dc" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11968" ],
-        "x-ms-correlation-request-id": [ "f036e5f9-ef2a-4a7a-8a82-be3e2d313386" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T084928Z:f036e5f9-ef2a-4a7a-8a82-be3e2d313386" ],
+        "x-ms-request-id": [ "eastus:b74b0a85-bc41-4b87-b9a9-969c5fe5ff19" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11980" ],
+        "x-ms-correlation-request-id": [ "a189d943-68e9-4b54-ab93-aa1b50dff542" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085544Z:a189d943-68e9-4b54-ab93-aa1b50dff542" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:49:28 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:55:44 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -538,18 +455,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01+15": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+13": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76", "77", "78", "79", "80", "81" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7" ],
+        "x-ms-unique-id": [ "51", "52", "53", "54", "55", "56" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
         "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
         "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -560,13 +477,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:f0d02c22-3bac-454a-bdf7-833987a92493" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11967" ],
-        "x-ms-correlation-request-id": [ "69b542bf-fa8a-4751-b1e0-4758062c3256" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T085000Z:69b542bf-fa8a-4751-b1e0-4758062c3256" ],
+        "x-ms-request-id": [ "eastus:6a36e3e6-c879-4c83-a09a-cb1e9914e665" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11979" ],
+        "x-ms-correlation-request-id": [ "b5de7b74-44a4-4bfd-8670-3245f5c1bf9e" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085615Z:b5de7b74-44a4-4bfd-8670-3245f5c1bf9e" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:49:59 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:56:14 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -576,18 +493,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01+16": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+14": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76", "77", "78", "79", "80", "81", "82" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7" ],
+        "x-ms-unique-id": [ "51", "52", "53", "54", "55", "56", "57" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
         "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
         "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -598,13 +515,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:bc99d16f-912a-469c-ab6a-6bc186f278f1" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11966" ],
-        "x-ms-correlation-request-id": [ "8d73daad-d441-4725-a3c3-bff814dbc42b" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T085030Z:8d73daad-d441-4725-a3c3-bff814dbc42b" ],
+        "x-ms-request-id": [ "eastus:b18d8833-393a-433f-ba53-7e4f420b3189" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11978" ],
+        "x-ms-correlation-request-id": [ "186057c7-a155-4d96-b0c8-17c3b5a3eca0" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085645Z:186057c7-a155-4d96-b0c8-17c3b5a3eca0" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:50:30 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:56:44 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -614,18 +531,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01+17": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+15": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76", "77", "78", "79", "80", "81", "82", "83" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7" ],
+        "x-ms-unique-id": [ "51", "52", "53", "54", "55", "56", "57", "58" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
         "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
         "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -636,13 +553,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:6bf318fe-cd9d-4e00-b0d7-82286350189e" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11965" ],
-        "x-ms-correlation-request-id": [ "ec0591f7-59bf-49fb-b23a-2938541055f5" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T085101Z:ec0591f7-59bf-49fb-b23a-2938541055f5" ],
+        "x-ms-request-id": [ "eastus:a6328bb7-f4e6-4ee8-92d2-650dabd8249c" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11977" ],
+        "x-ms-correlation-request-id": [ "ee4e05a1-e2ab-49dc-9376-03626558c4b0" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085715Z:ee4e05a1-e2ab-49dc-9376-03626558c4b0" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:51:00 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:57:14 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -652,18 +569,18 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01+18": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+16": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76", "77", "78", "79", "80", "81", "82", "83", "84" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7" ],
+        "x-ms-unique-id": [ "51", "52", "53", "54", "55", "56", "57", "58", "59" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
         "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
         "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -674,13 +591,13 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "eastus:8ae87a5d-4ab8-4c88-af73-6788186226c1" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11964" ],
-        "x-ms-correlation-request-id": [ "769770af-3bd1-4f20-be21-8d6f22685934" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T085132Z:769770af-3bd1-4f20-be21-8d6f22685934" ],
+        "x-ms-request-id": [ "eastus:a91e2427-a68e-4164-a2f6-e48e69e5d4f1" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11976" ],
+        "x-ms-correlation-request-id": [ "946e5336-bc34-4fda-8049-e6b5bf63cdb1" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085746Z:946e5336-bc34-4fda-8049-e6b5bf63cdb1" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:51:31 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:57:46 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "21" ],
@@ -690,18 +607,56 @@
       "Content": "{\"status\":\"Accepted\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01+19": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+17": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76", "77", "78", "79", "80", "81", "82", "83", "84", "85" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7" ],
+        "x-ms-unique-id": [ "51", "52", "53", "54", "55", "56", "57", "58", "59", "60" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
         "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
         "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:1796bc5d-1053-4ec6-bead-fdcc4c8b8a37" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11975" ],
+        "x-ms-correlation-request-id": [ "ff7bd9bf-99cf-4604-8e79-9a3bd3d17f75" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085817Z:ff7bd9bf-99cf-4604-8e79-9a3bd3d17f75" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 08:58:17 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+18": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -713,13 +668,13 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Vary": [ "Accept-Encoding" ],
-        "x-ms-request-id": [ "eastus:a0bab985-c956-443b-86b1-59e26f706b3a" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11963" ],
-        "x-ms-correlation-request-id": [ "b4170572-a769-4a9b-b3d6-6cf6e77ccd37" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T085202Z:b4170572-a769-4a9b-b3d6-6cf6e77ccd37" ],
+        "x-ms-request-id": [ "eastus:23e2202a-d9bb-4cd8-adab-efdaa2a22244" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11974" ],
+        "x-ms-correlation-request-id": [ "136b6c3b-e08f-45ca-af96-3f1c18f8e231" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085847Z:136b6c3b-e08f-45ca-af96-3f1c18f8e231" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:52:02 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:58:47 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "22" ],
@@ -729,18 +684,18 @@
       "Content": "{\"status\":\"Succeeded\"}"
     }
   },
-  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01+20": {
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01+19": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup6hvdwq/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL3Rlc3Rncm91cDZodmR3cS9wcm92aWRlcnMvTWljcm9zb2Z0LkRhdGFicmlja3Mvd29ya3NwYWNlcy9kYXRhYnJpY2tzLXRlc3QtODFkZmdyIiwiam9iSWQiOiJBcHBsaWFuY2VEZXByb3Zpc2lvbmluZ0pvYjoyRFJHQToyRFRFU1RHUk9VUDZIVkRXUToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyRDgxREZHUiJ9?api-version=2018-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdC1qbnM0MDciLCJqb2JJZCI6IkFwcGxpYW5jZURlcHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1Q6M0EyREpOUzQwNyJ9?api-version=2018-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86" ],
-        "x-ms-client-request-id": [ "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7", "036b91a5-220a-46fe-b76d-c18a324424f7" ],
-        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
-        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
-        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
-        "User-Agent": [ "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3", "PSVersion/v6.2.3" ],
+        "x-ms-unique-id": [ "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62" ],
+        "x-ms-client-request-id": [ "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d", "a97bf352-d7b7-458e-b3f9-75077c74aa1d" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -752,13 +707,737 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Vary": [ "Accept-Encoding" ],
-        "x-ms-request-id": [ "eastus:684b7aaa-b94e-402f-9470-fa2c8bd8af11" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "11962" ],
-        "x-ms-correlation-request-id": [ "99b4ece1-6461-4c2d-bf53-9957182c3d18" ],
-        "x-ms-routing-request-id": [ "KOREASOUTH:20200303T085203Z:99b4ece1-6461-4c2d-bf53-9957182c3d18" ],
+        "x-ms-request-id": [ "eastus:12edb837-268a-4c65-bba3-790ce4858b5e" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11973" ],
+        "x-ms-correlation-request-id": [ "2439e1df-0075-45e8-8b37-c1d328d65272" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085848Z:2439e1df-0075-45e8-8b37-c1d328d65272" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Tue, 03 Mar 2020 08:52:02 GMT" ]
+        "Date": [ "Mon, 12 Oct 2020 08:58:47 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "22" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Succeeded\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$PUT+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test01-jns407?api-version=2018-04-01+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test01-jns407?api-version=2018-04-01",
+      "Content": "{\r\n  \"location\": \"eastus\",\r\n  \"properties\": {\r\n    \"parameters\": {\r\n      \"customVirtualNetworkId\": {\r\n        \"value\": \"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Network/virtualNetworks/databricks-vnet-olhdj4\"\r\n      },\r\n      \"customPublicSubnetName\": {\r\n        \"value\": \"pub\"\r\n      },\r\n      \"customPrivateSubnetName\": {\r\n        \"value\": \"priv\"\r\n      },\r\n      \"requireInfrastructureEncryption\": {\r\n        \"value\": true\r\n      }\r\n    },\r\n    \"managedResourceGroupId\": \"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-databricks-test01-jns407-n7xo5vuclajbi\"\r\n  },\r\n  \"sku\": {\r\n    \"name\": \"premium\"\r\n  }\r\n}",
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "712" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 201,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "15" ],
+        "Azure-AsyncOperation": [ "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01" ],
+        "x-ms-request-id": [ "eastus:788e8e5a-773e-441f-b11f-d0ef3978fdae" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1196" ],
+        "x-ms-correlation-request-id": [ "50d76f14-c090-4ee0-ad3c-f177f136bc71" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085856Z:50d76f14-c090-4ee0-ad3c-f177f136bc71" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 08:58:56 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "937" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"properties\":{\"managedResourceGroupId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-databricks-test01-jns407-n7xo5vuclajbi\",\"provisioningState\":\"Accepted\",\"authorizations\":[{\"principalId\":\"9a74af6f-d153-4348-988a-e2672920bee9\",\"roleDefinitionId\":\"8e3af657-a8ff-443c-a75c-2fe8c4bcb635\"}],\"createdBy\":{\"oid\":\"97deab6c-e478-40b4-b4da-e7d9353dc1e8\",\"puid\":\"100320004B7AE8A5\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"updatedBy\":{\"oid\":\"97deab6c-e478-40b4-b4da-e7d9353dc1e8\",\"puid\":\"100320004B7AE8A5\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"createdDateTime\":\"2020-10-12T08:58:54.3108834Z\"},\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test01-jns407\",\"name\":\"databricks-test01-jns407\",\"type\":\"Microsoft.Databricks/workspaces\",\"sku\":{\"name\":\"premium\"},\"location\":\"eastus\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "63", "64" ],
+        "x-ms-client-request-id": [ "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009" ],
+        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:67eba6eb-9bdd-4f03-ab92-0c992534242a" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11972" ],
+        "x-ms-correlation-request-id": [ "6d4a8797-a265-4780-b3f3-56594c78056b" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085911Z:6d4a8797-a265-4780-b3f3-56594c78056b" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 08:59:11 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "63", "64", "65" ],
+        "x-ms-client-request-id": [ "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009" ],
+        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:963e516c-853b-4823-bf1b-a352c0540d8e" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11971" ],
+        "x-ms-correlation-request-id": [ "460eb7a7-479d-4135-918d-5787e7c4cc01" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T085942Z:460eb7a7-479d-4135-918d-5787e7c4cc01" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 08:59:41 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "63", "64", "65", "66" ],
+        "x-ms-client-request-id": [ "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009" ],
+        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:e833147c-24ac-4148-a0e9-8abe4eee537c" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11970" ],
+        "x-ms-correlation-request-id": [ "b41212f4-a4cd-47e3-8766-738a705bde4d" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090012Z:b41212f4-a4cd-47e3-8766-738a705bde4d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:00:11 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01+5": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "63", "64", "65", "66", "67" ],
+        "x-ms-client-request-id": [ "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009" ],
+        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:0a6e0059-89b8-4cb3-9cc5-dc39ae883f7e" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11969" ],
+        "x-ms-correlation-request-id": [ "4c0d26cc-e206-4d7d-a9e8-1fb432c2e875" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090043Z:4c0d26cc-e206-4d7d-a9e8-1fb432c2e875" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:00:43 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01+6": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "63", "64", "65", "66", "67", "68" ],
+        "x-ms-client-request-id": [ "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009" ],
+        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:a701a913-9c53-45bf-9165-7fd66932711b" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11968" ],
+        "x-ms-correlation-request-id": [ "9e6f1076-2f7f-4a2c-bc87-a5ad42641f81" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090113Z:9e6f1076-2f7f-4a2c-bc87-a5ad42641f81" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:01:13 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01+7": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlUHJvdmlzaW9uaW5nSm9iOjJEUkdBOjJEREFUQUJSSUNLUzozQTJEUkc6M0EyREZKWVc5UToyRERBVEFCUklDS1M6M0EyRFRFU1QwMTozQTJESk5TNDA3In0?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "63", "64", "65", "66", "67", "68", "69" ],
+        "x-ms-client-request-id": [ "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009" ],
+        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "x-ms-request-id": [ "eastus:471159ee-cf91-4dfc-911a-9bfa2227a15b" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11967" ],
+        "x-ms-correlation-request-id": [ "838bc714-fcd2-4851-b0a3-79a9df7bf209" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090143Z:838bc714-fcd2-4851-b0a3-79a9df7bf209" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:01:43 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "22" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Succeeded\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test01-jns407?api-version=2018-04-01+8": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test01-jns407?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "63", "64", "65", "66", "67", "68", "69", "70" ],
+        "x-ms-client-request-id": [ "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009", "cffed144-c8a6-4875-ac23-d7e85fb1c009" ],
+        "CommandName": [ "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace", "Az.Databricks.internal\\New-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded", "New-AzDatabricksWorkspace_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "x-ms-request-id": [ "eastus:cba6d8f7-f0dd-44f5-9f9e-cbfe9d8bf805" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11966" ],
+        "x-ms-correlation-request-id": [ "f52e5512-28c5-4f77-a01f-76675bfcec07" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090144Z:f52e5512-28c5-4f77-a01f-76675bfcec07" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:01:43 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "2107" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"properties\":{\"managedResourceGroupId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-databricks-test01-jns407-n7xo5vuclajbi\",\"parameters\":{\"amlWorkspaceId\":{\"type\":\"String\",\"value\":\"\"},\"customPrivateSubnetName\":{\"type\":\"String\",\"value\":\"priv\"},\"customPublicSubnetName\":{\"type\":\"String\",\"value\":\"pub\"},\"customVirtualNetworkId\":{\"type\":\"String\",\"value\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Network/virtualNetworks/databricks-vnet-olhdj4\"},\"enableFedRampCertification\":{\"type\":\"Bool\",\"value\":false},\"enableNoPublicIp\":{\"type\":\"Bool\",\"value\":false},\"loadBalancerBackendPoolName\":{\"type\":\"String\",\"value\":\"\"},\"loadBalancerId\":{\"type\":\"String\",\"value\":\"\"},\"prepareEncryption\":{\"type\":\"Bool\",\"value\":false},\"relayNamespaceName\":{\"type\":\"String\",\"value\":\"dbrelay26lsyrh7hbi4u\"},\"requireInfrastructureEncryption\":{\"type\":\"Bool\",\"value\":true},\"resourceTags\":{\"type\":\"Object\",\"value\":{\"application\":\"databricks\",\"databricks-environment\":\"true\"}},\"storageAccountName\":{\"type\":\"String\",\"value\":\"dbstorage26lsyrh7hbi4u\"},\"storageAccountSkuName\":{\"type\":\"String\",\"value\":\"Standard_GRS\"},\"vnetAddressPrefix\":{\"type\":\"String\",\"value\":\"10.139\"}},\"provisioningState\":\"Succeeded\",\"authorizations\":[{\"principalId\":\"9a74af6f-d153-4348-988a-e2672920bee9\",\"roleDefinitionId\":\"8e3af657-a8ff-443c-a75c-2fe8c4bcb635\"}],\"createdBy\":{\"oid\":\"97deab6c-e478-40b4-b4da-e7d9353dc1e8\",\"puid\":\"100320004B7AE8A5\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"updatedBy\":{\"oid\":\"97deab6c-e478-40b4-b4da-e7d9353dc1e8\",\"puid\":\"100320004B7AE8A5\",\"applicationId\":\"1950a258-227b-4e31-a9cf-717495945fc2\"},\"workspaceId\":\"5728031335823097\",\"workspaceUrl\":\"adb-5728031335823097.17.azuredatabricks.net\",\"createdDateTime\":\"2020-10-12T08:58:54.3108834Z\"},\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test01-jns407\",\"name\":\"databricks-test01-jns407\",\"type\":\"Microsoft.Databricks/workspaces\",\"sku\":{\"name\":\"premium\"},\"location\":\"eastus\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$DELETE+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test01-jns407?api-version=2018-04-01+9": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/workspaces/databricks-test01-jns407?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Location": [ "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01" ],
+        "Retry-After": [ "15" ],
+        "x-ms-request-id": [ "eastus:49486729-19b6-4e3e-a3bb-9f050512380d" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14998" ],
+        "x-ms-correlation-request-id": [ "50dd9eac-4403-4842-abbb-003e896ef9e3" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090145Z:50dd9eac-4403-4842-abbb-003e896ef9e3" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:01:44 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+10": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71", "72" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:6e984228-e1d9-45f3-a2fd-2d4c193eda38" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11965" ],
+        "x-ms-correlation-request-id": [ "0c47a233-32a9-42e2-8716-b9713f38f70e" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090200Z:0c47a233-32a9-42e2-8716-b9713f38f70e" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:02:00 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+11": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71", "72", "73" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:40c6cb55-d6a6-4072-b71e-8a865b509c8b" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11964" ],
+        "x-ms-correlation-request-id": [ "cfffd236-e85b-463c-bfcf-9ae52d95366a" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090231Z:cfffd236-e85b-463c-bfcf-9ae52d95366a" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:02:30 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+12": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71", "72", "73", "74" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:7013837c-a926-4c83-a62c-9a8c5583b34f" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11963" ],
+        "x-ms-correlation-request-id": [ "70f52ee5-1d5a-4d6f-ac08-72d92267ee93" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090301Z:70f52ee5-1d5a-4d6f-ac08-72d92267ee93" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:03:01 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+13": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71", "72", "73", "74", "75" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:86cb56b7-f0aa-47a5-b1ff-c036dbee942f" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11962" ],
+        "x-ms-correlation-request-id": [ "7e026dc2-4a8a-4273-8937-72e0c4f7c5fc" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090331Z:7e026dc2-4a8a-4273-8937-72e0c4f7c5fc" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:03:31 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+14": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71", "72", "73", "74", "75", "76" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:e87f3657-553b-4e5d-a8a8-4978406fda2e" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11961" ],
+        "x-ms-correlation-request-id": [ "251de61d-cd6d-43ad-914f-8d7e3428a237" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090402Z:251de61d-cd6d-43ad-914f-8d7e3428a237" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:04:01 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+15": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71", "72", "73", "74", "75", "76", "77" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:d0103492-4859-4ea9-9bee-48d21d4f9c3b" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11960" ],
+        "x-ms-correlation-request-id": [ "edbea260-0297-4b76-90b4-36c14615d5e4" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090432Z:edbea260-0297-4b76-90b4-36c14615d5e4" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:04:31 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+16": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71", "72", "73", "74", "75", "76", "77", "78" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:0b605aa8-35d1-43f8-9613-813aec90a0d6" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11959" ],
+        "x-ms-correlation-request-id": [ "afabacea-d09b-435e-bb5e-492f5227fdb1" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090504Z:afabacea-d09b-435e-bb5e-492f5227fdb1" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:05:04 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+17": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71", "72", "73", "74", "75", "76", "77", "78", "79" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "eastus:500cbfbb-e5c3-4711-a87a-a5130f8f1dfd" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11958" ],
+        "x-ms-correlation-request-id": [ "d48844e0-e1dc-4949-98b8-34f517a64c91" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090534Z:d48844e0-e1dc-4949-98b8-34f517a64c91" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:05:34 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "21" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Accepted\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+18": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71", "72", "73", "74", "75", "76", "77", "78", "79", "80" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "x-ms-request-id": [ "eastus:074ceae3-143c-41ae-8914-7cf02b4d82f7" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11957" ],
+        "x-ms-correlation-request-id": [ "3ae72588-5564-40a8-8312-4fac6c9453a8" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090604Z:3ae72588-5564-40a8-8312-4fac6c9453a8" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:06:04 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "22" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"status\":\"Succeeded\"}"
+    }
+  },
+  "New-AzDatabricksWorkspace+[NoContext]+CreateExpandedWithEncryption+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01+19": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/databricks-rg-fjyw9q/providers/Microsoft.Databricks/locations/eastus/operationStatuses/eyJmdWxseVF1YWxpZmllZEFwcGxpYW5jZUlkIjoiL3N1YnNjcmlwdGlvbnMvOWUyMjNkYmUtMzM5OS00ZTE5LTg4ZWItMDk3NWYwMmFjODdmL3Jlc291cmNlR3JvdXBzL2RhdGFicmlja3MtcmctZmp5dzlxL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGF0YWJyaWNrcy93b3Jrc3BhY2VzL2RhdGFicmlja3MtdGVzdDAxLWpuczQwNyIsImpvYklkIjoiQXBwbGlhbmNlRGVwcm92aXNpb25pbmdKb2I6MkRSR0E6MkREQVRBQlJJQ0tTOjNBMkRSRzozQTJERkpZVzlROjJEREFUQUJSSUNLUzozQTJEVEVTVDAxOjNBMkRKTlM0MDcifQ?api-version=2018-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81" ],
+        "x-ms-client-request-id": [ "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092", "b592cf03-ebdd-47cd-9887-ef2499954092" ],
+        "CommandName": [ "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace", "Remove-AzDatabricksWorkspace" ],
+        "FullCommandName": [ "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete", "Remove-AzDatabricksWorkspace_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview", "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "x-ms-request-id": [ "eastus:5eb0912e-ec23-4b76-927e-f16924c8fd02" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "11956" ],
+        "x-ms-correlation-request-id": [ "a47f140d-6bcb-44bb-8e49-c972619f73cb" ],
+        "x-ms-routing-request-id": [ "SOUTHEASTASIA:20201012T090605Z:a47f140d-6bcb-44bb-8e49-c972619f73cb" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 12 Oct 2020 09:06:04 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "22" ],

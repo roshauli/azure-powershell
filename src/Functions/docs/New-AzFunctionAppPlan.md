@@ -24,7 +24,6 @@ Creates a function app service plan.
 ## EXAMPLES
 
 ### Example 1: Create a Windows premium app plan in West Europe with burst out capability up to 10 instances.
-
 ```powershell
 PS C:\> New-AzFunctionAppPlan -ResourceGroupName MyResourceGroupName `
                               -Name MyPremiumPlan `
@@ -35,6 +34,9 @@ PS C:\> New-AzFunctionAppPlan -ResourceGroupName MyResourceGroupName `
                               -WorkerType Windows
 
 ```
+
+This command creates a Windows premium app plan in West Europe with burst out capability up to 10 instances.
+
 ## PARAMETERS
 
 ### -AsJob
@@ -159,7 +161,7 @@ Accept wildcard characters: False
 
 ### -Sku
 The plan sku.
-Valid inputs are: EP1, P2, EP3
+Valid inputs are: EP1, EP2, EP3
 
 ```yaml
 Type: System.String

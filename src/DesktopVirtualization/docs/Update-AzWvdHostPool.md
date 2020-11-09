@@ -18,9 +18,11 @@ Update-AzWvdHostPool -Name <String> -ResourceGroupName <String> [-SubscriptionId
  [-CustomRdpProperty <String>] [-Description <String>] [-FriendlyName <String>]
  [-LoadBalancerType <LoadBalancerType>] [-MaxSessionLimit <Int32>]
  [-PersonalDesktopAssignmentType <PersonalDesktopAssignmentType>]
+ [-PreferredAppGroupType <PreferredAppGroupType>] [-RegistrationInfoExpirationTime <DateTime>]
  [-RegistrationInfoRegistrationTokenOperation <RegistrationTokenOperation>] [-Ring <Int32>]
- [-SsoContext <String>] [-Tag <IHostPoolPatchTags>] [-ValidationEnvironment] [-DefaultProfile <PSObject>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SsoadfsAuthority <String>] [-SsoClientId <String>] [-SsoClientSecretKeyVaultPath <String>]
+ [-SsoContext <String>] [-SsoSecretType <SsoSecretType>] [-Tag <Hashtable>] [-ValidationEnvironment]
+ [-VMTemplate <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -28,9 +30,11 @@ Update-AzWvdHostPool -Name <String> -ResourceGroupName <String> [-SubscriptionId
 Update-AzWvdHostPool -InputObject <IDesktopVirtualizationIdentity> [-CustomRdpProperty <String>]
  [-Description <String>] [-FriendlyName <String>] [-LoadBalancerType <LoadBalancerType>]
  [-MaxSessionLimit <Int32>] [-PersonalDesktopAssignmentType <PersonalDesktopAssignmentType>]
+ [-PreferredAppGroupType <PreferredAppGroupType>] [-RegistrationInfoExpirationTime <DateTime>]
  [-RegistrationInfoRegistrationTokenOperation <RegistrationTokenOperation>] [-Ring <Int32>]
- [-SsoContext <String>] [-Tag <IHostPoolPatchTags>] [-ValidationEnvironment] [-DefaultProfile <PSObject>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SsoadfsAuthority <String>] [-SsoClientId <String>] [-SsoClientSecretKeyVaultPath <String>]
+ [-SsoContext <String>] [-SsoSecretType <SsoSecretType>] [-Tag <Hashtable>] [-ValidationEnvironment]
+ [-VMTemplate <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -205,6 +209,38 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
+### -PreferredAppGroupType
+The type of preferred application group type, default to Desktop Application Group
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PreferredAppGroupType
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -RegistrationInfoExpirationTime
+Expiration time of registration token.
+
+```yaml
+Type: System.DateTime
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
 ### -RegistrationInfoRegistrationTokenOperation
 The type of resetting the token.
 
@@ -254,11 +290,75 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
+### -SsoadfsAuthority
+URL to customer ADFS server for signing WVD SSO certificates.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -SsoClientId
+ClientId for the registered Relying Party used to issue WVD SSO certificates.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -SsoClientSecretKeyVaultPath
+Path to Azure KeyVault storing the secret used for communication to ADFS.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
 ### -SsoContext
 Path to keyvault containing ssoContext secret.
 
 ```yaml
 Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -SsoSecretType
+The type of single sign on Secret Type.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.SsoSecretType
 Parameter Sets: (All)
 Aliases:
 
@@ -290,7 +390,7 @@ Dynamic: False
 tags to be updated
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20191210Preview.IHostPoolPatchTags
+Type: System.Collections.Hashtable
 Parameter Sets: (All)
 Aliases:
 
@@ -307,6 +407,22 @@ Is validation environment.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -VMTemplate
+VM template for sessionhosts configuration within hostpool.
+
+```yaml
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -360,7 +476,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20191210Preview.IHostPool
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201019Preview.IHostPool
 
 ## ALIASES
 
@@ -375,6 +491,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DesktopName <String>]`: The name of the desktop within the specified desktop group
   - `[HostPoolName <String>]`: The name of the host pool within the specified resource group
   - `[Id <String>]`: Resource identity path
+  - `[MsixPackageFullName <String>]`: The version specific package full name of the MSIX package within specified hostpool
   - `[ResourceGroupName <String>]`: The name of the resource group. The name is case insensitive.
   - `[SessionHostName <String>]`: The name of the session host within the specified host pool
   - `[SubscriptionId <String>]`: The ID of the target subscription.

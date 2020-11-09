@@ -51,7 +51,7 @@ DataRetentionTime            : 1.01:25:00
 Id                           : /subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup/providers/Microsoft.TimeSeriesInsights/environments/tsitest 
                                001
 IngressState                 :
-Kind                         : Standard
+Kind                         : Gen1
 Location                     : eastus
 Name                         : tsitest001
 PartitionKeyProperty         :
@@ -79,7 +79,7 @@ DataAccessId                        : 3de1d1e1-4f9b-4bc6-aad3-a835597dcd86
 Id                                  : /subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourcegroups/testgroup/providers/Microsoft.TimeSeriesInsights/environments/ 
                                       tsill
 IngressState                        :
-Kind                                : LongTerm
+Kind                                : Gen2
 Location                            : EastUs
 Name                                : tsill
 PropertyUsageState                  :
@@ -102,7 +102,7 @@ DataRetentionTime            : 1.01:25:00
 Id                           : /subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/testgroup/providers/Microsoft.TimeSeriesInsights/environments/tsitest 
                                001
 IngressState                 :
-Kind                         : Standard
+Kind                         : Gen1
 Location                     : eastus
 Name                         : tsitest001
 PartitionKeyProperty         :
@@ -123,7 +123,7 @@ This command lists all time series insights environments in a resource group.
 
 ### Example 3: Get a time series insights environment by object
 ```powershell
-PS C:\> $env = Get-AzTimeSeriesInsightsEnvironment -ResourceGroupName tsi-test-i01k5l -EnvironmentName tsi-envv8u56x 
+PS C:\> $env = Get-AzTimeSeriesInsightsEnvironment -ResourceGroupName tsi-test-i01k5l -Name tsi-envv8u56x 
 PS C:\> Get-AzTimeSeriesInsightsEnvironment -InputObject $env
 
 DataAccessFqdn               : d76a61f2-8a30-41a5-9587-f241eb9b48d9.env.timeseries.azure.com
@@ -131,7 +131,7 @@ DataAccessId                 : d76a61f2-8a30-41a5-9587-f241eb9b48d9
 DataRetentionTime            : 1.01:25:00
 Id                           : /subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/tsi-test-i01k5l/providers/Microsoft.TimeSeriesInsights/environments/tsi-envv8u56x
 IngressState                 :
-Kind                         : Standard
+Kind                         : Gen1
 Location                     : eastus2
 Name                         : tsi-envv8u56x
 PartitionKeyProperty         :
@@ -165,7 +165,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Expand
@@ -181,7 +180,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -InputObject
@@ -198,7 +196,6 @@ Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Name
@@ -214,7 +211,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -ResourceGroupName
@@ -230,7 +226,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -SubscriptionId
@@ -246,7 +241,6 @@ Position: Named
 Default value: (Get-AzContext).Subscription.Id
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### CommonParameters
@@ -258,16 +252,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.Api20180815Preview.IEnvironmentResource
-
-## ALIASES
+### Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.Api20200515.IEnvironmentResource
 
 ## NOTES
 
-### COMPLEX PARAMETER PROPERTIES
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <ITimeSeriesInsightsIdentity>: Identity Parameter
+
+INPUTOBJECT <ITimeSeriesInsightsIdentity>: Identity Parameter
   - `[AccessPolicyName <String>]`: Name of the access policy.
   - `[EnvironmentName <String>]`: Name of the environment
   - `[EventSourceName <String>]`: The name of the Time Series Insights event source associated with the specified environment.

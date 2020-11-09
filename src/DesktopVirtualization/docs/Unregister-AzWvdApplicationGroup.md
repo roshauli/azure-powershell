@@ -8,7 +8,7 @@ schema: 2.0.0
 # Unregister-AzWvdApplicationGroup
 
 ## SYNOPSIS
-
+Unregister the Windows virtual desktop application group.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Unregister-AzWvdApplicationGroup -ApplicationGroupPath <String> -ResourceGroupNa
 ```
 
 ## DESCRIPTION
-
+Unregister the Windows virtual desktop application group.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Dynamic: False
 ```
 
 ### -DefaultProfile
-
+The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -94,7 +94,7 @@ Type: System.String
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
 Accept pipeline input: False

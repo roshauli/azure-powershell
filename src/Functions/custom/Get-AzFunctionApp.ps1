@@ -3,17 +3,18 @@ function Get-AzFunctionApp {
     [Microsoft.Azure.PowerShell.Cmdlets.Functions.Description('Gets function apps in a subscription.')]
     [CmdletBinding(DefaultParametersetname="GetAll")]
     param(
-        [Parameter(Mandatory=$true, ParameterSetName="ByName", HelpMessage='The Azure subscription ID.')]
+        [Parameter(ParameterSetName="ByName", HelpMessage='The Azure subscription ID.')]
         [Parameter(ParameterSetName="GetAll")]
         [Parameter(ParameterSetName="ByResourceGroupName")]
+        [Parameter(ParameterSetName="ByLocation")]
         [Microsoft.Azure.PowerShell.Cmdlets.Functions.Category('Path')]
         [Microsoft.Azure.PowerShell.Cmdlets.Functions.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
         [ValidateNotNullOrEmpty()]
         [System.String[]]
         ${SubscriptionId},
         
-        [Parameter(Mandatory=$true, ParameterSetName="ByName", HelpMessage='The name of the resource group.')]
-        [Parameter(ParameterSetName="ByResourceGroupName")]
+        [Parameter(Mandatory=$true, ParameterSetName="ByResourceGroupName", HelpMessage='The name of the resource group.')]
+        [Parameter(Mandatory=$true, ParameterSetName="ByName")]
         [Microsoft.Azure.PowerShell.Cmdlets.Functions.Category('Path')]
         [ValidateNotNullOrEmpty()]
         [System.String]
@@ -31,7 +32,7 @@ function Get-AzFunctionApp {
         [System.String]
         ${Location},
         
-        [Parameter(Mandatory=$false, HelpMessage='Use to specify whether to include deployment slots in results.')]
+        [Parameter(Mandatory=$false, ParameterSetName="ByResourceGroupName", HelpMessage='Use to specify whether to include deployment slots in results.')]
         [System.Management.Automation.SwitchParameter]
         ${IncludeSlot},
 
@@ -95,17 +96,15 @@ function Get-AzFunctionApp {
                 $locationToUse = $Location
                 $PSBoundParameters.Remove("Location") | Out-Null
             }
+        }
 
-            $apps = @(Az.Functions.internal\Get-AzFunctionApp)
-        }
-        else
-        {
-            $apps = @(Az.Functions.internal\Get-AzFunctionApp @PSBoundParameters)
-        }
+        $apps = @(Az.Functions.internal\Get-AzFunctionApp @PSBoundParameters)
 
         if ($apps.Count -gt 0)
         {
-            GetFunctionApps -Apps $apps -Location $locationToUse
+            $params = GetParameterKeyValues -PSBoundParametersDictionary $PSBoundParameters `
+                                            -ParameterList @("SubscriptionId", "HttpPipelineAppend", "HttpPipelinePrepend")
+            GetFunctionApps -Apps $apps -Location $locationToUse @params
         }
     }
 }

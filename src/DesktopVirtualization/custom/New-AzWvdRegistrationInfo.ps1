@@ -1,5 +1,26 @@
+
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
+Create Windows virtual desktop registration info.
+.Description
+Create Windows virtual desktop registration info.
+#>
 function New-AzWvdRegistrationInfo {
-    [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20191210Preview.IRegistrationInfo')]
+    [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201019Preview.IRegistrationInfo')]
     [CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
     param(
         [Parameter()]
@@ -88,8 +109,9 @@ function New-AzWvdRegistrationInfo {
             -SsoContext $hostpool.SsoContext `
             -CustomRdpProperty $hostpool.CustomRdpProperty `
             -Ring $hostpool.Ring `
-            -ValidationEnvironment:$hostpool.ValidationEnvironment
-        New-Object -TypeName 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20191210Preview.RegistrationInfo' `
+            -ValidationEnvironment:$hostpool.ValidationEnvironment `
+            -PreferredAppGroupType $hostpool.PreferredAppGroupType
+        New-Object -TypeName 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201019Preview.RegistrationInfo' `
             -Property @{ `
                 ExpirationTime = $hostpool.RegistrationInfoExpirationTime; `
                 RegistrationTokenOperation = $hostpool.RegistrationInfoRegistrationTokenOperation; `

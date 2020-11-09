@@ -17,7 +17,7 @@ This directory contains the PowerShell module for the Functions service.
 This module was primarily generated via [AutoRest](https://github.com/Azure/autorest) using the [PowerShell](https://github.com/Azure/autorest.powershell) extension.
 
 ## Module Requirements
-- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 1.7.4 or greater
+- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 1.8.1 or greater
 
 ## Authentication
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
@@ -65,6 +65,7 @@ directive:
 ```
 
 ``` yaml
+branch: powershell-function
 require:
   - $(this-folder)/../readme.azure.noprofile.md
 input-file:
@@ -85,7 +86,7 @@ input-file:
   - $(repo)/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/AppServiceEnvironments.json
   - $(repo)/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/AppServicePlans.json
   - $(repo)/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/ResourceHealthMetadata.json
-module-version: 1.0.0
+module-version: 1.0.1
 title: Functions
 subject-prefix: ''
 
@@ -115,7 +116,8 @@ directive:
     transform: delete $."x-ms-examples"
   - from: swagger-document
     where: $..produces
-    transform: $ = $.filter( each => each === 'application/json');
+    #transform: $ = $.filter( each => each === 'application/json');
+    transform: $ = ["application/json"];
     reason: this spec adds produces application/xml and text/json erronously.
   - where:
       subject: Operation
@@ -482,6 +484,15 @@ directive:
   - where:
       subject: (.*)StaticSite(.*)
     remove: true
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace(/sb.AppendLine\(\$@\"\{Indent\}FormatsToProcess = \{formatList\}\"\);/, 'sb.AppendLine\(\$@\"\{Indent\}FormatsToProcess = \{formatList\}\"\);\r\nsb.AppendLine\(\$@\"\{Indent\}TypesToProcess = \'./custom/Functions.types.ps1xml\'{Environment.NewLine}\{Indent\}ScriptsToProcess = \'./custom/HelperFunctions.ps1\'{Environment.NewLine}\{Indent\}FunctionsToExport = \'Get-AzFunctionApp\', \'Get-AzFunctionAppAvailableLocation\', \'Get-AzFunctionAppPlan\', \'Get-AzFunctionAppSetting\', \'New-AzFunctionApp\', \'New-AzFunctionAppPlan\', \'Remove-AzFunctionApp\', \'Remove-AzFunctionAppPlan\', \'Remove-AzFunctionAppSetting\', \'Restart-AzFunctionApp\', \'Start-AzFunctionApp\', \'Stop-AzFunctionApp\', \'Update-AzFunctionApp\', \'Update-AzFunctionAppPlan\', \'Update-AzFunctionAppSetting\'\"\);');
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace(/sb.AppendLine\(\$@\"\{Indent\}AliasesToExport = \{aliasesList\}\"\);/, '')
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace(/sb.AppendLine\(\$@\"\{Indent\}FunctionsToExport = \{cmdletsList\}\"\);/, '')
 ```
 
 ``` yaml

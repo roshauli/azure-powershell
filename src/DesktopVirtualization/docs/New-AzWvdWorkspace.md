@@ -13,9 +13,9 @@ Create or update a workspace.
 ## SYNTAX
 
 ```
-New-AzWvdWorkspace -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
- [-ApplicationGroupReference <String[]>] [-Description <String>] [-FriendlyName <String>] [-Location <String>]
- [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-AzWvdWorkspace -Name <String> -ResourceGroupName <String> -Location <String> [-SubscriptionId <String>]
+ [-ApplicationGroupReference <String[]>] [-Description <String>] [-FriendlyName <String>] [-Tag <Hashtable>]
+ [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -23,7 +23,7 @@ Create or update a workspace.
 
 ## EXAMPLES
 
-### Example 1: Create a Windows Virtual Desktop Worksapce by name
+### Example 1: Create a Windows Virtual Desktop Workspace by name
 ```powershell
 PS C:\> New-AzWvdWorkspace -ResourceGroupName ResourceGroupName `
                         -Name WorkspaceName `
@@ -39,7 +39,7 @@ eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
 
 This command creates a Windows Virtual Desktop Workspace in a Resource Group.
 
-### Example 2: Create a Windows Virtual Desktop Worksapce by name
+### Example 2: Create a Windows Virtual Desktop Workspace by name
 ```powershell
 PS C:\> New-AzWvdWorkspace -ResourceGroupName ResourceGroupName `
                         -Name WorkspaceName `
@@ -122,14 +122,14 @@ Dynamic: False
 ```
 
 ### -Location
-Resource location.
+The geo-location where the resource lives
 
 ```yaml
 Type: System.String
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -242,7 +242,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20191210Preview.IWorkspace
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201019Preview.IWorkspace
 
 ## ALIASES
 

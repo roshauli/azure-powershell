@@ -15,14 +15,14 @@ Update a desktop.
 ### UpdateExpanded (Default)
 ```
 Update-AzWvdDesktop -ApplicationGroupName <String> -Name <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] [-Description <String>] [-FriendlyName <String>] [-Tag <IDesktopPatchTags>]
+ [-SubscriptionId <String>] [-Description <String>] [-FriendlyName <String>] [-Tag <Hashtable>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-AzWvdDesktop -InputObject <IDesktopVirtualizationIdentity> [-Description <String>]
- [-FriendlyName <String>] [-Tag <IDesktopPatchTags>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
+ [-FriendlyName <String>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -182,7 +182,7 @@ Dynamic: False
 tags to be updated
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20191210Preview.IDesktopPatchTags
+Type: System.Collections.Hashtable
 Parameter Sets: (All)
 Aliases:
 
@@ -236,7 +236,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20191210Preview.IDesktop
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201019Preview.IDesktop
 
 ## ALIASES
 
@@ -251,6 +251,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DesktopName <String>]`: The name of the desktop within the specified desktop group
   - `[HostPoolName <String>]`: The name of the host pool within the specified resource group
   - `[Id <String>]`: Resource identity path
+  - `[MsixPackageFullName <String>]`: The version specific package full name of the MSIX package within specified hostpool
   - `[ResourceGroupName <String>]`: The name of the resource group. The name is case insensitive.
   - `[SessionHostName <String>]`: The name of the session host within the specified host pool
   - `[SubscriptionId <String>]`: The ID of the target subscription.

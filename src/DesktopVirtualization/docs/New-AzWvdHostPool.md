@@ -14,20 +14,23 @@ Create or update a host pool.
 
 ### CreateExpanded (Default)
 ```
-New-AzWvdHostPool -Name <String> -ResourceGroupName <String> [-HostPoolType <HostPoolType>]
- [-LoadBalancerType <LoadBalancerType>] [-Location <String>] [-SubscriptionId <String>]
- [-CustomRdpProperty <String>] [-Description <String>] [-ExpirationTime <DateTime>] [-FriendlyName <String>]
- [-MaxSessionLimit <Int32>] [-PersonalDesktopAssignmentType <PersonalDesktopAssignmentType>]
- [-RegistrationInfoToken <String>] [-RegistrationTokenOperation <RegistrationTokenOperation>] [-Ring <Int32>]
- [-SsoContext <String>] [-Tag <Hashtable>] [-ValidationEnvironment] [-VMTemplate <String>]
+New-AzWvdHostPool -HostPoolType <HostPoolType> -LoadBalancerType <LoadBalancerType> -Location <String>
+ -Name <String> -PreferredAppGroupType <PreferredAppGroupType> -ResourceGroupName <String>
+ [-SubscriptionId <String>] [-CustomRdpProperty <String>] [-Description <String>] [-ExpirationTime <DateTime>]
+ [-FriendlyName <String>] [-MaxSessionLimit <Int32>]
+ [-PersonalDesktopAssignmentType <PersonalDesktopAssignmentType>] [-RegistrationInfoToken <String>]
+ [-RegistrationTokenOperation <RegistrationTokenOperation>] [-Ring <Int32>] [-SsoadfsAuthority <String>]
+ [-SsoClientId <String>] [-SsoClientSecretKeyVaultPath <String>] [-SsoContext <String>]
+ [-SsoSecretType <SsoSecretType>] [-Tag <Hashtable>] [-ValidationEnvironment] [-VMTemplate <String>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### FullSenerioCreate
 ```
 New-AzWvdHostPool -HostPoolType <HostPoolType> -LoadBalancerType <LoadBalancerType> -Location <String>
- -Name <String> -ResourceGroupName <String> [-DesktopAppGroupName <String>] [-SubscriptionId <String>]
- [-WorkspaceName <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -Name <String> -PreferredAppGroupType <PreferredAppGroupType> -ResourceGroupName <String>
+ [-DesktopAppGroupName <String>] [-SubscriptionId <String>] [-WorkspaceName <String>]
+ [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -216,7 +219,7 @@ Dynamic: False
 ```
 
 ### -Location
-Resource location.
+The geo-location where the resource lives
 
 ```yaml
 Type: System.String
@@ -272,6 +275,22 @@ Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -PreferredAppGroupType
+The type of preferred application group type, default to Desktop Application Group
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PreferredAppGroupType
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -344,11 +363,75 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
+### -SsoadfsAuthority
+URL to customer ADFS server for signing WVD SSO certificates.
+
+```yaml
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -SsoClientId
+ClientId for the registered Relying Party used to issue WVD SSO certificates.
+
+```yaml
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -SsoClientSecretKeyVaultPath
+Path to Azure KeyVault storing the secret used for communication to ADFS.
+
+```yaml
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
 ### -SsoContext
 Path to keyvault containing ssoContext secret.
 
 ```yaml
 Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -SsoSecretType
+The type of single sign on Secret Type.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.SsoSecretType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -480,7 +563,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20191210Preview.IHostPool
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201019Preview.IHostPool
 
 ## ALIASES
 
